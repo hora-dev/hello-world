@@ -1,0 +1,11 @@
+
+services:
+  app:
+    image: openjdk:21-jdk
+    container_name: hello-world-app
+    volumes:
+      - ./target/hello-world-1.0-SNAPSHOT.jar:/app/app.jar
+    working_dir: /app
+    command: ["java", "-jar", "app.jar"]
+    ports:
+      - "8080:8080"
