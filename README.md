@@ -3,7 +3,7 @@ Classic **Hello World!** app built with Java 21
 
 Running the example,
 
-1. Ensure you're running Java 21 on your machine and java Maven installed on your machine.
+1. Ensure you're running Java 21 on your machine and java Maven & docker-compose installed on your machine.
 2. Run:
    `mvn clean package && docker-compose up && docker-compose down`
 3. You should see something like:
